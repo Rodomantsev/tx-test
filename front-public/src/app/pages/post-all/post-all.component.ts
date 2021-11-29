@@ -3,7 +3,6 @@ import { IPost } from "../../models/models";
 import { BaseComponent } from "../../core/classes/base.component";
 import { combineLatest, forkJoin, fromEvent, interval, Observable, of, timer } from "rxjs";
 import { Store } from "@ngrx/store";
-import { Post } from 'src/app/root-state/post-state/post.models';
 import { PostStoreSelectors } from "../../root-state/post-state";
 import { RootStoreState } from "../../root-state";
 import { concatMap, delay, exhaustMap, map, mergeMap, switchMap, take, tap } from "rxjs/operators";
@@ -24,7 +23,7 @@ export class PostAllComponent extends BaseComponent implements OnInit {
 
     ngOnInit(): void {
 
-        this.subs = this.store$.select(PostStoreSelectors.selectAllPostItems).subscribe((allPost: Post[]) => {
+        this.subs = this.store$.select(PostStoreSelectors.selectAllPostItems).subscribe((allPost: IPost[]) => {
             this.posts = allPost;
         });
         this.error$ = this.store$.select(PostStoreSelectors.selectPostError);

@@ -5,7 +5,6 @@ import { BaseComponent } from "../../core/classes/base.component";
 import { DomSanitizer, SafeHtml } from "@angular/platform-browser";
 import { ActivatedRoute } from "@angular/router";
 import { PostStoreSelectors } from "../../root-state/post-state";
-import { Post } from "../../root-state/post-state/post.models";
 import { Store } from "@ngrx/store";
 import { RootStoreState } from "../../root-state";
 import { selectPostById } from "../../root-state/post-state/selectors";
@@ -29,7 +28,7 @@ export class PostDetailComponent extends BaseComponent implements OnInit {
     }
 
     ngOnInit(): void {
-        this.subs = this.store$.select(selectPostById(this.id)).subscribe((post: Post) => {
+        this.subs = this.store$.select(selectPostById(this.id)).subscribe((post: IPost) => {
             this.post = post;
         });
     }

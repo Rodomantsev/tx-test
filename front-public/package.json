@@ -5,7 +5,7 @@
     "ng": "ng",
     "public": "ng serve --port 4444",
     "build": "ng build",
-    "test": "ng test --code-coverag",
+    "test": "ng test --code-coverage",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },

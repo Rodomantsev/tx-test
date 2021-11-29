@@ -1,0 +1,35 @@
+<section>
+    <div class="row">
+        <div class="col-md-10 col-lg-8 col-xl-6 mx-auto">
+            <div class="bg-primary-soft rounded p-4 p-sm-5">
+                <h2>Create your free account </h2>
+                <!-- Form START -->
+                <form class="mt-4"  [formGroup]="form" (submit)="onSubmit()">
+                    <!-- Email -->
+                    <div class="mb-3">
+                        <label class="form-label" for="email">Email address</label>
+                        <input type="email" [ngClass]="{ 'is-invalid': form.get('email').touched && form.get('email').invalid }" formControlName="email" class="form-control" id="email" placeholder="E-mail" autocomplete="off">
+                        <small id="emailHelp" class="form-text">We'll never share your email with anyone else.</small>
+                        <app-input-error-msg [control]="form.get('email')"></app-input-error-msg>
+
+                    </div>
+                    <!-- Password -->
+                    <div class="mb-3">
+                        <label class="form-label" for="password">Password</label>
+                        <input type="password" [ngClass]="{ 'is-invalid': form.get('password').touched && form.get('password').invalid }" formControlName="password" class="form-control" id="password" placeholder="*********" autocomplete="off">
+                        <app-input-error-msg [control]="form.get('password')"></app-input-error-msg>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-sm-4">
+                            <button type="submit" class="btn btn-success" [disabled]="form.invalid" >Sign me up</button>
+                        </div>
+                        <div class="col-sm-8 text-sm-end">
+                            <span>Have an account? <a [routerLink]="'/login'" >Sign in</a></span>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,109 @@
+{
+  "teams": [
+    {
+      "id": 1,
+      "name": "FC Barcelona",
+      "coach": "Ernesto Valverde",
+      "description": "The best football team in the world!"
+    },
+    {
+      "id": 2,
+      "name": "Real Madrid",
+      "coach": "Zinedine Zidane",
+      "description": "The worst football team in the world!"
+    },
+    {
+      "title": "some mock title",
+      "author": "some mock author",
+      "category": "some mock category",
+      "text": "text text text text text text text text text text text text text text text ",
+      "date": "2021-11-17T19:25:32.676Z",
+      "img": "//via.placeholder.com/200x250",
+      "id": 3
+    },
+    {
+      "title": "some mock title",
+      "author": "some mock author",
+      "category": "some mock category",
+      "text": "text text text text text text text text text text text text text text text ",
+      "date": "2021-11-17T19:26:27.754Z",
+      "img": "//via.placeholder.com/200x250",
+      "id": 4
+    },
+    {
+      "title": "some mock title",
+      "author": "some mock author",
+      "category": "some mock category",
+      "text": "text text text text text text text text text text text text text text text ",
+      "date": "2021-11-17T19:26:56.846Z",
+      "img": "//via.placeholder.com/200x250",
+      "id": 5
+    },
+    {
+      "title": "some mock title",
+      "author": "some mock author",
+      "category": "some mock category",
+      "text": "text text text text text text text text text text text text text text text ",
+      "date": "2021-11-17T19:26:56.846Z",
+      "img": "//via.placeholder.com/200x250",
+      "id": 6
+    }
+  ],
+  "post": [
+    {
+      "title": "some mock title",
+      "author": "some mock author",
+      "category": "some mock category",
+      "text": "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      "description": "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      "date": "2021-11-17T20:04:47.477Z",
+      "imgBig": "//via.placeholder.com/846x155",
+      "imgSmall": "//via.placeholder.com/280x155",
+      "id": 1
+    },
+    {
+      "title": "some mock title",
+      "author": "some mock author",
+      "category": "some mock category",
+      "text": "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      "description": "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      "date": "2021-11-17T20:04:47.477Z",
+      "imgBig": "//via.placeholder.com/846x155",
+      "imgSmall": "//via.placeholder.com/280x155",
+      "id": 2
+    },
+    {
+      "title": "some mock title",
+      "author": "some mock author",
+      "category": "some mock category",
+      "text": "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      "description": "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      "date": "2021-11-17T20:04:47.477Z",
+      "imgBig": "//via.placeholder.com/846x155",
+      "imgSmall": "//via.placeholder.com/280x155",
+      "id": 3
+    },
+    {
+      "title": "some mock title",
+      "author": "some mock author",
+      "category": "some mock category",
+      "text": "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      "description": "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      "date": "2021-11-17T20:04:47.477Z",
+      "imgBig": "//via.placeholder.com/846x155",
+      "imgSmall": "//via.placeholder.com/280x155",
+      "id": 4
+    },
+    {
+      "title": "some mock title",
+      "author": "some mock author",
+      "category": "some mock category",
+      "text": "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      "description": "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      "date": "2021-11-17T20:04:47.477Z",
+      "imgBig": "//via.placeholder.com/846x155",
+      "imgSmall": "//via.placeholder.com/280x155",
+      "id": 5
+    }
+  ]
+}

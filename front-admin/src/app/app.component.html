@@ -1,0 +1,55 @@
+<pre>
+    1. tap vs map
+    2. combineLatest \ forkJoin
+    3. merge map \ flat map \ switch map \ concat map \ exaust map
+</pre>
+<main>
+    <nav class="py-2 bg-light border-bottom">
+        <div class="container d-flex flex-wrap">
+            <ul class="nav me-auto">
+                <li class="nav-item">
+                    <a href="http://localhost:4200" class="nav-link link-dark px-2">Home public</a>
+                </li>
+                <li class="nav-item">
+                    <a href="http://localhost:4200/post-all" class="nav-link link-dark px-2">Posts</a>
+                </li>
+                <li class="nav-item" *ngIf="false">
+                    <a href="#" class="nav-link link-dark px-2" [routerLink]="'/post-detail/1'" [routerLinkActive]="'active'">Post detail</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link link-dark px-2" [routerLink]="'/create-post'" [routerLinkActive]="'active'">Create post</a>
+                </li>
+                <li class="nav-item" *ngIf="false">
+<!--                    <a href="http://localhost:4300/create-post" class="nav-link link-dark px-2 ac/tive" target="_blank">Create all</a>-->
+<!--                      <a href="#" class="nav-link link-dark px-2" [routerLink]="'/create-post'" [routerLinkActive]="'active'">Create all</a>-->
+                </li>
+            </ul>
+            <ul class="nav">
+                <li class="nav-item"><a href="javascript:void(0)" class="nav-link link-dark px-2" (click)="logOut()">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header class="py-3 mb-4 border-bottom">
+        <div class="container d-flex flex-wrap justify-content-center">
+            <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
+                <span class="fs-4">Double header</span>
+            </a>
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0">
+                <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+            </form>
+        </div>
+    </header>
+
+    <div class="container">
+        <router-outlet></router-outlet>
+    </div>
+
+</main>
+
+<router-outlet></router-outlet>
+<div class="container">
+    <br>
+    <br>
+    <h2>footer</h2>
+</div>
+

@@ -1,0 +1,59 @@
+<section class="pt-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="bg-danger-soft p-4 text-center rounded-3">
+                    <h1 class="text-danger m-0">Add post!</h1>
+                    <p class="lead m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, voluptates!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <form [formGroup]="form">
+        <div class="container mt-4" data-sticky-container>
+            <div class="row">
+                <div class="mb-3">
+                    <label for="formFile" class="form-label">Add photo</label>
+                    <input class="form-control" type="file" id="formFile">
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-lg-6">
+                    <label class="form-label" for="title">Title</label>
+                    <input type="text" class="form-control" placeholder="Add title" id="title" formControlName="title">
+                </div>
+
+                <div class="col-lg-6">
+                    <label class="form-label" for="tags">Tags</label>
+                    <input type="input" class="form-control" placeholder="Add tags" id="tags" formControlName="tags">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-lg-6">
+                    <label class="form-label" for="seokeywords">Seo keywords</label>
+                    <input type="text" class="form-control" placeholder="Add keywords" id="seokeywords" formControlName="seokeywords">
+                </div>
+                <div class="col-lg-6">
+                    <label class="form-label" for="description">Description</label>
+                    <input type="text" class="form-control" placeholder="Description" id="description" formControlName="description">
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="imgBig" class="form-label">img</label>
+                <input formControlName="imgBig" type="text" class="form-control" id="imgBig">
+            </div>
+            <div class="mb-3">
+                <label for="imgSmall" class="form-label">img</label>
+                <input formControlName="imgSmall" type="text" class="form-control" id="imgSmall">
+            </div>
+
+            <div class="mb-3">
+                <label for="text" class="form-label">Text</label>
+                <ckeditor id="text" formControlName="text" [editor]="Editor" data="<p>Hello, world!</p>" ></ckeditor>
+            </div>
+            <button type="button" class="btn btn-success" (click)="addPost()">Success</button>
+        </div>
+    </form>
+</section>

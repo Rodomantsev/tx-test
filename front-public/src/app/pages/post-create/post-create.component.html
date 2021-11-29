@@ -1,0 +1,30 @@
+<form [formGroup]="form">
+  <div class="col-md-6">
+    <div class="mb-3">
+      <label for="title" class="form-label">title</label>
+      <input formControlName="title" type="text" class="form-control" id="title" placeholder="title">
+    </div>
+    <div class="mb-3">
+      <label for="author" class="form-label">author</label>
+      <input formControlName="author" type="text" class="form-control" id="author">
+    </div>
+    <!-- TODO: create enum -->
+    <div class="mb-3">
+      <label for="category" class="form-label">category</label>
+      <input formControlName="category" type="text" class="form-control" id="category">
+    </div>
+    <div class="mb-3">
+      <label for="imgBig" class="form-label">img</label>
+      <input formControlName="imgBig" type="text" class="form-control" id="imgBig">
+    </div>
+    <div class="mb-3">
+      <label for="imgSmall" class="form-label">img</label>
+      <input formControlName="imgSmall" type="text" class="form-control" id="imgSmall">
+    </div>
+    <div class="mb-3">
+      <label for="text" class="form-label">Text</label>
+      <textarea formControlName="text" class="form-control" id="text" rows="3"></textarea>
+    </div>
+    <button type="button" class="btn btn-success" (click)="create()">Create</button>
+  </div>
+</form>

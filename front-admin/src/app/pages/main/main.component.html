@@ -1,0 +1,67 @@
+<section>
+    <div class="row">
+        <div class="col-md-10 col-lg-8 col-xl-6 mx-auto">
+            <div class="bg-primary-soft rounded p-4 p-sm-5">
+                <h2>Create your free account </h2>
+                <!-- Form START -->
+                <form class="mt-4"  [formGroup]="form" (submit)="onSubmit()">
+                    <!-- Username -->
+                    <div class="mb-3">
+                        <label class="form-label" for="username">Username</label>
+                        <input type="text" [ngClass]="{ 'is-invalid': form.get('username').touched && form.get('username').invalid }"formControlName="username" class="form-control" id="username" placeholder="Username" autocomplete="off">
+                        <app-input-error-msg [control]="form.get('username')"></app-input-error-msg>
+
+                    </div>
+                    <!-- Email -->
+                    <div class="mb-3">
+                        <label class="form-label" for="email">Email address</label>
+                        <input type="email" [ngClass]="{ 'is-invalid': form.get('email').touched && form.get('email').invalid }" formControlName="email" class="form-control" id="email" placeholder="E-mail" autocomplete="off">
+                        <small id="emailHelp" class="form-text">We'll never share your email with anyone else.</small>
+                        <app-input-error-msg [control]="form.get('email')"></app-input-error-msg>
+
+                    </div>
+                    <!-- Password -->
+                    <div class="mb-3">
+                        <label class="form-label" for="password1">Password</label>
+                        <input type="password" [ngClass]="{ 'is-invalid': form.get('password1').touched && form.get('password1').invalid }" formControlName="password1" class="form-control" id="password1" placeholder="*********" autocomplete="off">
+                        <app-input-error-msg [control]="form.get('password1')"></app-input-error-msg>
+                    </div>
+                    <!-- Password -->
+                    <div class="mb-3">
+                        <label class="form-label" for="password2">Confirm Password</label>
+                        <input type="password" [ngClass]="{ 'is-invalid': form.get('password2').touched && form.get('password2').invalid }"  formControlName="password2" class="form-control" id="password2" placeholder="*********" autocomplete="off">
+                        <app-input-error-msg [control]="form.get('password2')"></app-input-error-msg>
+                    </div>
+                    <!--            &lt;!&ndash; Checkbox &ndash;&gt;-->
+                    <!--            <div class="mb-3 form-check">-->
+                    <!--              <input type="checkbox" class="form-check-input" id="exampleCheck1">-->
+                    <!--              <label class="form-check-label" for="exampleCheck1">Yes i'd also like to sign up for additional subscription</label>-->
+                    <!--            </div>-->
+                    <!-- Button -->
+                    <div class="row align-items-center">
+                        <div class="col-sm-4">
+                            <button type="submit" class="btn btn-success" [disabled]="form.invalid" >Sign me up</button>
+                        </div>
+                        <div class="col-sm-8 text-sm-end">
+                            <span>Have an account? <a [routerLink]="'/login'" >Sign in</a></span>
+                        </div>
+                    </div>
+                </form>
+                <!-- Form END -->
+                <hr>
+                <!-- Social-media btn -->
+                <div class="text-center">
+                    <p>Sign up with your social network for quick access</p>
+                    <ul class="list-unstyled d-sm-flex mt-3 justify-content-center">
+                        <li class="mx-2">
+                            <a href="#" class="btn bg-facebook d-inline-block"><i class="fab fa-facebook-f me-2"></i> Sign up with Facebook</a>
+                        </li>
+                        <li class="mx-2">
+                            <a href="#" class="btn bg-google d-inline-block"><i class="fab fa-google me-2"></i> Sign up with google</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

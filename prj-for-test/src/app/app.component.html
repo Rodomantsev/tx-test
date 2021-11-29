@@ -1,0 +1,8 @@
+<app-my-component></app-my-component>
+
+<h1 class="counter" [class.green]="counter % 2 === 0">{{ counter }}</h1>
+
+<button id="increment" (click)="increment()">increment</button>
+<button id="decrement" (click)="decrement()">decrement</button>
+
+<router-outlet></router-outlet>
